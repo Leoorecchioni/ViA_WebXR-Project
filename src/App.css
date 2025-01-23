@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 /* App.css */
 * {
   margin: 0;
@@ -6,13 +8,13 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #f4f4f4;
   color: #333;
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -36,21 +38,56 @@ a:hover {
 
 /* Section d'introduction */
 .intro {
-  background: #007BFF;
-  color: white;
+  background: #fafafa;
+  color: #333;
   padding: 100px 0;
-  text-align: center;
+  text-align: left;
 }
 
 .intro h1 {
-  font-size: 40px;
+  font-size: 44px;
   margin-bottom: 20px;
 }
 
 .intro p {
   font-size: 20px;
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: 0 auto;
+}
+
+.text-content p {
+  margin-bottom: 20px; /* Espace sous le paragraphe */
+}
+
+.text-content button {
+  font-weight: bold;
+  padding: 10px 20px; /* Taille du bouton */
+  background-color: #007bff; /* Couleur du bouton */
+  color: white; /* Couleur du texte du bouton */
+  border: none; /* Supprimer la bordure */
+  border-radius: 5px; /* Arrondir les bords */
+  cursor: pointer; /* Curseur pour indiquer qu'il est cliquable */
+}
+
+.text-content button:hover {
+  background-color: #0056b3; /* Changer la couleur au survol */
+}
+
+
+.intro .container {
+  display: flex;
+  align-items: center; /* Centre verticalement le texte et l'image */
+  justify-content: space-between; /* Assure une bonne séparation entre texte et image */
+}
+
+.text-content {
+  flex: 1; /* Le texte occupe tout l'espace restant */
+}
+
+.image-content img {
+  max-width: 1050px; /* Ajustez la largeur maximale de l'image */
+  height: auto;
+  margin-left: 20px;
 }
 
 /* Conteneur du modèle 3D */
@@ -63,6 +100,17 @@ a:hover {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container-spline-part2 {
+  position: relative;
+  width: 900px;
+  margin: 50px auto;
+  height: 600px;
+  background-color: #000;
+  /* border-radius: 8px; */
+  /* overflow: hidden; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 /* Modèle 3D */
@@ -98,7 +146,7 @@ a:hover {
   padding: 10px 20px;
   font-size: 16px;
   color: white;
-  background-color: #28a745;
+  background-color: #007bff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -106,7 +154,7 @@ a:hover {
 }
 
 .filter button:hover {
-  background-color: #218838;
+  background-color: #0150a5;
 }
 
 /* Objectifs */

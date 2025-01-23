@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 /* Styles de base */
 * {
     margin: 0;
@@ -6,7 +8,7 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     background-color: #f0f0f0;
   }
@@ -17,7 +19,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 30px 100px;
     color: white;
   }
   
@@ -33,12 +35,13 @@
   }
   
   .menu ul {
+    font-weight: bold;
     list-style: none;
     display: flex;
   }
   
   .menu ul li {
-    margin: 0 15px;
+    margin: 0 30px;
   }
   
   .menu ul li a {
@@ -49,7 +52,7 @@
   }
   
   .menu ul li a:hover {
-    color: blue;
+    color: #007bff;
   }
   
   /* Menu hamburger pour les petits écrans */

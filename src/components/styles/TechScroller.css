@@ -1,0 +1,52 @@
+/* Conteneur principal */
+.tech-scroller {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background-color: #f0f0f0; /* Couleur d'arrière-plan */
+    padding: 20px 0;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+  }
+  
+  /* Conteneur défilant */
+  .scroll-content {
+    display: inline-flex;
+    animation: scroll 20s linear infinite; /* Animation fluide */
+  }
+  
+  /* Élément individuel */
+  .tech-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 0 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Icônes */
+  .tech-item svg {
+    font-size: 30px; /* Taille des icônes */
+    margin-bottom: 8px;
+  }
+  
+  /* Animation keyframes */
+  @keyframes scroll {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 import NavbarComponent from './components/NavbarComponent';
-// import Spline from './components/Splines'
+// import Splines from './components/Splines'
+import StartImage from './img/startimg.jpg';
+// import TechScroller from "./components/TechScroller";
 
 function App() {
   const [isFilterVisible, setIsFilterVisible] = useState(true);
@@ -17,8 +19,26 @@ function App() {
       {/* Introduction Section */}
       <section className="intro">
         <div className="container">
-          <h1>VR Project for Medicine</h1>
-          <p>Welcome to our innovative project that uses virtual reality (VR) to revolutionize medicine.</p>
+          <div className="text-content">
+            <h1>Augmented Reality Project for <br/>Real-Time Surgical Assistance</h1>
+            <p>Integrating AR into the surgeon’s workflow offers real-time insights and minimizes distractions</p>
+            <button>LEARN MORE</button>
+          </div>
+          <div className="image-content">
+            <img src={StartImage} alt="VR for Medicine" />
+          </div>
+        </div>
+      </section>
+
+      {/* Project Goals Section */}
+      <section className="goals">
+        <div className="container">
+            <h2>Project Goals</h2>
+            <ul>
+              <li>Enhance medical training for healthcare professionals through realistic simulations.</li>
+              <li>Offer a new approach to patient care using immersive experiences.</li>
+              <li>Make access to complex medical procedures simpler and easier to understand.</li>
+            </ul>
         </div>
       </section>
 
@@ -33,7 +53,7 @@ function App() {
 
         {/* Replace the URL with the link to your Spline model */}
         <iframe
-          src="https://my.spline.design/untitled-a5fb281bcf408a799e1888620a2b2026/"
+          src="https://my.spline.design/glasseffectcopy-ad7ddded331c160864c50af98e292350/"
           frameBorder="0"
           className="model-3d"
           title="Spline Model"
@@ -41,17 +61,8 @@ function App() {
         />
       </div>
 
-      {/* Project Goals Section */}
-      <section className="goals">
-        <div className="container">
-          <h2>Project Goals</h2>
-          <ul>
-            <li>Enhance medical training for healthcare professionals through realistic simulations.</li>
-            <li>Offer a new approach to patient care using immersive experiences.</li>
-            <li>Make access to complex medical procedures simpler and easier to understand.</li>
-          </ul>
-        </div>
-      </section>
+      {/* Autres sections */}
+      {/* <TechScroller /> */}
 
       {/* Features Section */}
       <section className="features">
@@ -73,6 +84,20 @@ function App() {
           </div>
         </div>
       </section>
+
+
+      {/* Autres sections */}
+      <div>
+        <div className="container-spline-part2">
+          <iframe
+              src="https://my.spline.design/glasseffectcopycopy-49fe0d7a529bfee005337531d606fadc/"
+              frameBorder="0"
+              className="model-3d"
+              title="Spline Model"
+              allow="autoplay; fullscreen"
+            />
+        </div>
+      </div>
 
       {/* Contact Section */}
       <section className="contact">

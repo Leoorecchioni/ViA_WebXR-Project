@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles/NavbarComponent.css'; // On inclut le fichier CSS pour les styles
+// import Splines from './Splines';
 
 const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

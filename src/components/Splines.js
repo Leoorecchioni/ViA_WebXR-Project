@@ -1,7 +1,18 @@
-import Spline from '@splinetool/react-spline';
+import React from "react";
+import "./styles/Splines.css";
 
-export default function App() {
+const Splines = () => {
   return (
-    <Spline scene="https://prod.spline.design/XrqfxSlH31smzk5E/scene.splinecode" />
+    <div className="fullscreen-container">
+      <iframe
+        src="https://prod.spline.design/YOUR-MODEL-ID/scene.splinecode"
+        frameBorder="0"
+        className="spline-view"
+        title="Spline Model"
+        allow="fullscreen"
+      ></iframe>
+    </div>
   );
-}
+};
+
+export default Splines;
