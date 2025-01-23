@@ -12,7 +12,7 @@ const NavbarComponent = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <a href="/">Logo</a>
+        <a href="/">ARMed</a>
       </div>
       <div className={`menu ${isMenuOpen ? 'active' : ''}`}>
         <ul>

@@ -3,7 +3,7 @@ import './App.css';
 import NavbarComponent from './components/NavbarComponent';
 // import Splines from './components/Splines'
 import StartImage from './img/startimg.jpg';
-// import TechScroller from "./components/TechScroller";
+import TechScroller from "./components/TechScroller";
 
 function App() {
   const [isFilterVisible, setIsFilterVisible] = useState(true);
@@ -35,56 +35,18 @@ function App() {
         <div className="container">
             <h2>Project Goals</h2>
             <ul>
-              <li>Enhance medical training for healthcare professionals through realistic simulations.</li>
-              <li>Offer a new approach to patient care using immersive experiences.</li>
-              <li>Make access to complex medical procedures simpler and easier to understand.</li>
+              <li>Our project uses augmented reality (AR) to improve the accuracy and safety of surgical procedures.</li>
+              <li>By superimposing essential medical information (pathologies, allergies, medical imaging) directly in the surgeon's field of vision, we aim to reduce errors and facilitate operations.</li>
+              <li>The system also enables remote assistance from medical experts.</li>
+            <br/>
+            <h2>Context</h2>
+              <ul>
+                <li>Surgeons currently have to consult external screens to access critical information, which can disrupt the operation.</li>
+                <li>Our AR solution enables this data to be seamlessly integrated into the field of vision, providing greater fluidity and safety during operations.</li>
+              </ul>
             </ul>
         </div>
       </section>
-
-      {/* 3D Model Container */}
-      <div className="model-container">
-        {isFilterVisible && (
-          <div className="filter">
-            <p>Click to access the 3D model</p>
-            <button onClick={handleAccessClick}>Access</button>
-          </div>
-        )}
-
-        {/* Replace the URL with the link to your Spline model */}
-        <iframe
-          src="https://my.spline.design/glasseffectcopy-ad7ddded331c160864c50af98e292350/"
-          frameBorder="0"
-          className="model-3d"
-          title="Spline Model"
-          allow="autoplay; fullscreen"
-        />
-      </div>
-
-      {/* Autres sections */}
-      {/* <TechScroller /> */}
-
-      {/* Features Section */}
-      <section className="features">
-        <div className="container">
-          <h2>Key Features</h2>
-          <div className="feature-list">
-            <div className="feature-item">
-              <h3>Medical Simulations</h3>
-              <p>Immersive environments for hands-on training on medical procedures.</p>
-            </div>
-            <div className="feature-item">
-              <h3>Accessibility</h3>
-              <p>Patients and professionals can access VR simulations from anywhere.</p>
-            </div>
-            <div className="feature-item">
-              <h3>Tracking and Assessments</h3>
-              <p>Track user progress with real-time skill assessments.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
 
       {/* Autres sections */}
       <div>
@@ -97,6 +59,51 @@ function App() {
               allow="autoplay; fullscreen"
             />
         </div>
+      </div>
+
+      {/* Autres sections */}
+      <TechScroller />
+
+      {/* Features Section */}
+      <section className="features">
+        <div className="container">
+          <h2>Next steps</h2>
+          <div className="feature-list">
+            <div className="feature-item">
+              <h3>Prototype</h3>
+              <p>Development of the information overlay system.</p>
+            </div>
+            <div className="feature-item">
+              <h3>Simulated tests</h3>
+              <p>Validation with surgeons under controlled conditions.</p>
+            </div>
+            <div className="feature-item">
+              <h3>Pilot deployment</h3>
+              <p>Hospital trial to adjust the system in real-life conditions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3D Model Container */}
+      <div className="model-container">
+        {isFilterVisible && (
+          <div className="filter">
+            <p>Click to access the 3D model</p>
+            <a href="https://my.spline.design/untitled-a5fb281bcf408a799e1888620a2b2026/" target='_blank' rel='noopener noreferrer'>
+              <button>Access</button>
+            </a>
+          </div>
+        )}
+
+        {/* Replace the URL with the link to your Spline model */}
+        <iframe
+          src="https://my.spline.design/untitled-a5fb281bcf408a799e1888620a2b2026/"
+          frameBorder="0"
+          className="model-3d"
+          title="Spline Model"
+          allow="autoplay; fullscreen"
+        />
       </div>
 
       {/* Contact Section */}

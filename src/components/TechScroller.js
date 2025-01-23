@@ -1,6 +1,6 @@
 import React from "react";
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaDatabase, FaGitAlt } from "react-icons/fa";
-import { SiRedux, SiTypescript, SiWebpack } from "react-icons/si";
+import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaGitAlt } from "react-icons/fa";
+import { SiWebpack, SiUnity, SiBlender } from "react-icons/si";
 import "./styles/TechScroller.css";
 
 const TechScroller = () => {
@@ -9,16 +9,15 @@ const TechScroller = () => {
     { icon: <FaJs />, name: "JavaScript" },
     { icon: <FaHtml5 />, name: "HTML" },
     { icon: <FaCss3Alt />, name: "CSS" },
-    { icon: <FaNodeJs />, name: "Node.js" },
-    { icon: <FaDatabase />, name: "MongoDB" },
-    { icon: <SiRedux />, name: "Redux" },
-    { icon: <SiTypescript />, name: "TypeScript" },
+    { icon: <SiBlender />, name: "Blender" },
+    { icon: <SiUnity />, name: "Unity" },
     { icon: <SiWebpack />, name: "Webpack" },
     { icon: <FaGitAlt />, name: "Git" },
   ];
 
   return (
     <div className="tech-scroller">
+      <h1>Technology</h1>
       <div className="scroll-content">
         {technologies.map((tech, index) => (
           <div key={index} className="tech-item">
