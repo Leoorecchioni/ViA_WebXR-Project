@@ -111,14 +111,14 @@ function App() {
         <div className="container">
           <h2>Contact Us</h2>
           <p>For more information about the project or for collaborations, contact us at:</p>
-          <p>Email: <a href="mailto:contact@vrmedproject.com">contact@vrmedproject.com</a></p>
+          <p>Email: <a href="mailto:contact@vrmedproject.com">leo.orecchioni@va.lv</a></p>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2025 VR Project for Medicine. All rights reserved.</p>
+          <p>&copy; 2025 VR Project for ARMed. All rights reserved.</p>
         </div>
       </footer>
     </div>
